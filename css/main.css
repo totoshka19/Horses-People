@@ -1,14 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Jost&display=swap');
+
+:root {
+    --main-color: #575757;
+    --secondary-color: #000000;
+    --btn-color: #ffba61;
+    --btn-color-hover: #ffab32;
+}
+
 /* ---------------- Common styles start ---------------- */
 
 body {
-    font-family: 'Circe', sans-serif;
+    font-family: 'Jost', sans-serif;
     overflow-x: hidden;
+    color: var(--main-color);
 }
 
 .container {
-    max-width: 1360px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 30px;
 }
 
+.title {
+    font-family: 'EB Garamond', serif;
+    color: var(--secondary-color);
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-size: 18px;
+    background-color: var(--btn-color);
+    padding: 16px 36px;
+    border-radius: 40px;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background-color: var(--btn-color-hover);
+}
+
+.btn:active {
+    transform: translateY(3px);
+}
+
 /* ---------------- Common styles end ---------------- */
+
+/* ---------------- Header start ---------------- */
+
+.header__container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    font-size: 18px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-list__item-link {
+    transition: all .5s ease;
+}
+
+.nav-list__item-link:hover {
+    color: var(--secondary-color);
+}
+
+/* ---------------- Header end ---------------- */
+
+/* ---------------- Hero start ---------------- */
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__text {
+    max-width: 50%;
+}
+
+.hero__text p {
+    margin: 30px 0 50px;
+    font-size: 18px;
+}
+
+.hero__title {
+    font-size: 58px;
+}
+
+/* ---------------- Hero end ---------------- */
