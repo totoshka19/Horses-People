@@ -3,6 +3,7 @@
 :root {
     --main-color: #575757;
     --secondary-color: #000000;
+    --accent-color: #16486a;
     --card-bgcolor: rgba(255, 186, 97, 0.3);
     --btn-color: #ffba61;
     --btn-color-hover: #ffab32;
@@ -116,7 +117,7 @@ body {
 /* ---------------- Trimming start ---------------- */
 
 .trimming {
-    background-color: #16486a;
+    background-color: var(--accent-color);
 }
 
 .trimming__container {
@@ -188,12 +189,16 @@ body {
 }
 
 .team__card-video:hover {
-    color: #16486a;
+    color: var(--secondary-color);
 }
 
 /* ---------------- Team end ---------------- */
 
 /* ---------------- Gallery start ---------------- */
+
+.gallery {
+    margin-bottom: 40px;
+}
 
 .gallery__title {
     text-align: center;
@@ -261,4 +266,34 @@ body {
 }
 
 /* ---------------- Gallery end ---------------- */
+
+/* ---------------- Services start ---------------- */
+
+.services {
+    margin-bottom: 40px;
+}
+
+.services__title {
+    text-align: center;
+    padding: 50px 0 25px;
+}
+
+.services__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.services__list-item i {
+    color: var(--accent-color);
+}
+
+.services__block .btn {
+    margin: 30px auto;
+}
+
+/* ---------------- Services end ---------------- */
+
 
