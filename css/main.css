@@ -43,6 +43,7 @@ body {
 
 .btn:hover {
     background-color: var(--btn-color-hover);
+    color: var(--secondary-color);
 }
 
 .btn:active {
@@ -72,10 +73,12 @@ body {
 
 .nav-list__item-link {
     transition: all .5s ease;
+    border-bottom: 2px solid rgba(255, 171, 50, 0);
 }
 
 .nav-list__item-link:hover {
     color: var(--secondary-color);
+    border-color: var(--btn-color-hover);
 }
 
 /* ---------------- Header end ---------------- */
@@ -114,7 +117,6 @@ body {
 
 .trimming {
     background-color: #16486a;
-    margin-bottom: 50px;
 }
 
 .trimming__container {
@@ -135,11 +137,12 @@ body {
 /* ---------------- Team start ---------------- */
 
 .team {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .team__title {
-   text-align: center;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .team__cards {
@@ -189,3 +192,73 @@ body {
 }
 
 /* ---------------- Team end ---------------- */
+
+/* ---------------- Gallery start ---------------- */
+
+.gallery__title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gallery__cards {
+    margin-top: 50px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas:
+            "a b c"
+            "a d e"
+            "f d i"
+            "g h i";
+}
+
+.gallery__card {
+    width: 100%;
+    height: auto;
+}
+
+.gallery__card:nth-child(1) {
+  grid-area: a;
+}
+
+.gallery__card:nth-child(2) {
+    grid-area: b;
+}
+
+.gallery__card:nth-child(3) {
+    grid-area: c;
+}
+
+.gallery__card:nth-child(4) {
+    grid-area: d;
+}
+
+.gallery__card:nth-child(5) {
+    grid-area: e;
+}
+
+.gallery__card:nth-child(6) {
+    grid-area: f;
+}
+
+.gallery__card:nth-child(7) {
+    grid-area: g;
+}
+
+.gallery__card:nth-child(8) {
+    grid-area: h;
+}
+
+.gallery__card:nth-child(9) {
+    grid-area: i;
+}
+
+.gallery__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------- Gallery end ---------------- */
+
