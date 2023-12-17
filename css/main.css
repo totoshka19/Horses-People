@@ -3,7 +3,7 @@
 :root {
     --main-color: #575757;
     --secondary-color: #000000;
-    --card-bgcolor: rgba(142, 182, 209, 0.3);
+    --card-bgcolor: rgba(255, 186, 97, 0.3);
     --btn-color: #ffba61;
     --btn-color-hover: #ffab32;
 }
@@ -82,7 +82,7 @@ body {
 
 /* ---------------- Hero start ---------------- */
 .hero {
-    margin: 80px 0 150px;
+    margin: 30px 0 60px;
 }
 .hero__container {
     display: flex;
@@ -109,6 +109,28 @@ body {
 }
 
 /* ---------------- Hero end ---------------- */
+
+/* ---------------- Trimming start ---------------- */
+
+.trimming {
+    background-color: #16486a;
+    margin-bottom: 50px;
+}
+
+.trimming__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 30px;
+}
+
+.trimming__title {
+    color: white;
+    font-size: 28px;
+}
+
+/* ---------------- Trimming end ---------------- */
 
 /* ---------------- Team start ---------------- */
 
