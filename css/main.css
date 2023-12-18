@@ -58,6 +58,7 @@ body {
 .header__container {
     margin-top: 10px;
     display: flex;
+    gap: 30px;
     justify-content: space-between;
 }
 
@@ -80,6 +81,14 @@ body {
 .nav-list__item-link:hover {
     color: var(--secondary-color);
     border-color: var(--btn-color-hover);
+}
+
+#menuBtn {
+    display: none;
+    font-size: 35px;
+    color: var(--accent-color);
+    align-items: center;
+    cursor: pointer;
 }
 
 /* ---------------- Header end ---------------- */

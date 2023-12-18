@@ -1,0 +1,105 @@
+@media (max-width: 1270px) {
+    .hero__title {
+        font-size: 52px;
+    }
+    .trimming__container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .hero__title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__nav {
+        display: none;
+    }
+    #menuBtn {
+        display: flex;
+    }
+    .hero__title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 880px) {
+    .hero__title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .hero__container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .hero__title {
+        font-size: 44px;
+    }
+    .hero__text {
+        order: 1;
+        width: 100%;
+    }
+    .hero__img {
+        width: 100%;
+    }
+    .hero__img img {
+        max-height: 100%;
+        object-fit: cover;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .trimming__container {
+        padding: 40px 20px;
+    }
+    .trimming__title {
+        font-size: 20px;
+    }
+    .team__card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 620px) {
+    .team__card {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .team__card-img {
+        max-width: 100%;
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    .hero {
+        margin: 15px 0 30px;
+    }
+    .hero__text p {
+        margin: 15px 0 25px;
+        font-size: 16px;
+    }
+    .hero__title {
+        font-size: 32px;
+    }
+    .trimming__container {
+        padding: 20px 10px;
+    }
+}
