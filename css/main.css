@@ -96,7 +96,7 @@ body {
 }
 
 .hero__text {
-    max-width: 50%;
+    width: 50%;
 }
 
 .hero__text p {
@@ -108,7 +108,12 @@ body {
     font-size: 58px;
 }
 
+.hero__img {
+    width: 50%;
+}
+
 .hero__img img{
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -299,12 +304,12 @@ body {
 /* ---------------- Horses start ---------------- */
 
 .horses {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .horses__title {
     text-align: center;
-    padding: 50px 0 25px;
+    padding: 50px 0;
 }
 
 .horses__cards {
@@ -340,5 +345,54 @@ body {
 
 /* ---------------- Horses end ---------------- */
 
+/* ---------------- Footer start ---------------- */
 
+.footer {
+    background-color: var(--accent-color);
+}
 
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+.footer__logo {
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.footer__content-title {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.footer__content-text:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.footer__content-link {
+    border-bottom: 1px solid rgba(255, 171, 50, 0);
+    transition: all .3s ease;
+}
+
+.footer__content-link:hover {
+    border-color: var(--btn-color-hover);
+}
+
+.footer__content-icon {
+    font-size: 28px;
+    transition: all .3s ease;
+}
+
+.footer__content-icon:hover {
+    color: var(--btn-color-hover);
+}
+
+.footer__content-icon:not(:last-child) {
+    padding-right: 10px;
+}
+
+/* ---------------- Footer end ---------------- */
