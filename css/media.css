@@ -53,6 +53,14 @@
             "g h"
             "i h";
     }
+    .footer {
+        padding: 30px;
+     }
+    .footer__container {
+        max-width: 400px;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
