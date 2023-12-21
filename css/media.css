@@ -85,6 +85,13 @@
     .team__card {
         max-width: 100%;
     }
+    .services__block {
+        max-width: 100%;
+    }
+    .services__list {
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 620px) {
