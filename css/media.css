@@ -31,6 +31,19 @@
     .hero__title {
         font-size: 34px;
     }
+    .gallery__cards {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 250px);
+        grid-template-areas:
+            "a b"
+            "a c"
+            "d d"
+            "e f"
+            "g h"
+            "i h";
+    }
 }
 
 @media (max-width: 768px) {
@@ -83,6 +96,9 @@
         max-width: 100%;
         max-height: 350px;
     }
+    .gallery__cards {
+        grid-template-rows: repeat(6, 200px);
+    }
 }
 
 @media (max-width: 480px) {
@@ -101,5 +117,9 @@
     }
     .trimming__container {
         padding: 20px 10px;
+    }
+    .gallery__cards {
+        display: flex;
+        flex-direction: column;
     }
 }
