@@ -7,6 +7,9 @@
         text-align: center;
         padding: 40px 30px;
     }
+    .horses__cards {
+        gap: 20px 10px;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -24,6 +27,12 @@
     }
     .hero__title {
         font-size: 38px;
+    }
+    .horses__cards {
+        justify-content: space-around;
+    }
+    .horses__card {
+        max-width: 32%;
     }
 }
 
@@ -92,6 +101,9 @@
         max-width: 300px;
         margin: 0 auto;
     }
+    .horses__card {
+        max-width: 48%;
+    }
 }
 
 @media (max-width: 620px) {
@@ -105,6 +117,15 @@
     }
     .gallery__cards {
         grid-template-rows: repeat(6, 200px);
+    }
+    .horses__cards {
+        flex-direction: column;
+    }
+    .horses__card {
+        max-width: 100%;
+    }
+    .horses__card-img {
+        max-height: 350px;
     }
 }
 
